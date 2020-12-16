@@ -1,5 +1,10 @@
 package java8;
 
+import org.apache.commons.io.FileUtils;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.File;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -9,7 +14,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 public class Java8Tester {
-    public static void main(String args[]) {
+    public static void main(String args[]) throws IOException {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
         //System.out.println("输出所有数据:");
         // 传递参数 n
@@ -35,7 +40,7 @@ public class Java8Tester {
         }
     }
 
-    public static void testLocalDateTime(){
+    public static void testLocalDateTime() throws IOException {
 
         // 获取当前的日期时间
         LocalDateTime currentTime = LocalDateTime.now();
@@ -64,7 +69,10 @@ public class Java8Tester {
         // 解析字符串
         LocalTime date5 = LocalTime.parse("20:15:30");
         System.out.println("date5: " + date5);
+        MultipartFile multipartFile = null;
 
+        File file = new File("");
+        FileUtils.copyInputStreamToFile(multipartFile.getInputStream(), file);
 
     }
 }
