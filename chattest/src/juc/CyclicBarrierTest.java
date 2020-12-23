@@ -3,7 +3,7 @@ package juc;
 import java.util.concurrent.CyclicBarrier;
 
 /**
- * @author zhouhaibao
+ * @author zhouhaibao 可以用于多线程计算数据，最后合并计算结果的场景。例如，用一个Excel保 存了用户所有银行流水，每个Sheet保存一个账户近一年的每笔银行流水，现在需要统计用户 的日均银行流水，先用多线程处理每个sheet里的银行流水，都执行完之后，得到每个sheet的日 均银行流水，最后，再用barrierAction用这些线程的计算结果，计算出整个Excel的日均银行流 水
  * @date 2020/12/14 16:16
  */
 public class CyclicBarrierTest {

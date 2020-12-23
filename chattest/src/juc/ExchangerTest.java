@@ -5,7 +5,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * @author zhouhaibao
+ * @author zhouhaibao 用于校对工作，例如ab岗位银行流水的校对
+ *
  * @date 2020/12/14 16:38
  */
 public class ExchangerTest {

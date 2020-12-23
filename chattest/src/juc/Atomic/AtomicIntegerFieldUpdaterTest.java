@@ -16,8 +16,8 @@ public class AtomicIntegerFieldUpdaterTest {
         System.out.println(a.get(conan));
     }
 
-
     public static class User {
+
         private String name;
         public volatile int old;
 

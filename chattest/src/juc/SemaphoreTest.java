@@ -6,7 +6,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
 /**
- * @author zhouhaibao
+ * @author zhouhaibao 用于做流量控制，特别是公用资源有限的应用场景，比如数据库连接
+ *
  * @date 2020/12/14 16:34
  */
 public class SemaphoreTest {
